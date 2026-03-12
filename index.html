@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/background.css">
+    <link rel="stylesheet" href="styles/themes.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="card glass">
+        <h1 style="text-align: center;">Chris' Portfolio</h1>
+        <nav>
+            <div class="nav-group">
+                <a href="#About" class="button glass active">About</a>
+                <a href="#samples" class="button glass">Samples</a>
+                <a href="#contact" class="button glass">Contact</a>
+            </div>
+
+
+        </nav>
+    </header>
+    <main>
+        <section class="card glass" id="about">
+            <h2>About Me</h2>
+            <p>My name is Chris, I'm a First-Year Senior Student, CPIS Major. I have been programming since around 2018,
+                when I was able to take a Programming class in High School instead of Calculus.</p>
+            <br />
+            <p>Currently, I have experience with:</p>
+            <ul>
+                <li>Golang</li>
+                <li>Java</li>
+                <li>C#</li>
+                <li>HTML/CSS/JS</li>
+                <li>Hypervisors (Proxmox)</li>
+                <li>Networking Equipment</li>
+                <li>Database Software (Postgres, Prometheus, Grafana, OTEL, Time Series)</li>
+                <li>A few things I probably forgot to include</li>
+            </ul>
+            <br />
+            <p>I am currently learning and acquiring skill and knowledge with the intent of become a Systems
+                Administrator. I enjoy maintaining large information and computing systems, so that role feels like a
+                natural fit for me.</p>
+        </section>
+        <section class="card glass" id="samples">
+            <h2>Samples</h2>
+            <p>These samples are some of the interactive elements I've created.</p>
+            <div>
+                <label for="theme-dropdown">Theme Switcher:</label>
+                <select id="theme-dropdown" onchange="setTheme(this.value)" class="button glass">
+                    <option value="light" class="glass">Light</option>
+                    <option value="dark" class="glass">Dark</option>
+                    <option value="sunset" class="glass">Sunset</option>
+                    <option value="matrix" class="glass">Matrix</option>
+                </select>
+            </div>
+        </section>
+    </main>
+
+    <footer class="card glass">
+        <p>BCS 377: Project 1</p>
+    </footer>
+
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/theme-engine.js"></script>
+
+    <!-- Background SVG -->
+    <!-- https://app.haikei.app/ -->
+    <svg style="display: hidden;" id="visual" viewBox="0 0 675 900" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="background" preserveAspectRatio="none"
+        width="100%" height="100%">
+        <g stroke-width="1" stroke-linejoin="bevel">
+            <path d="M325.3 492L333.3 589L377.7 559Z" class="poly-six"></path>
+            <path d="M333.3 589L347.7 616L377.7 559Z" class="poly-one"></path>
+            <path d="M347.7 616L426.1 613L377.7 559Z" class="poly-two"></path>
+            <path d="M377.7 559L419.7 446L325.3 492Z" class="poly-three"></path>
+            <path d="M469.1 558L419.7 446L377.7 559Z" class="poly-three"></path>
+            <path d="M173.9 613L280.3 662L333.3 589Z" class="poly-four"></path>
+            <path d="M333.3 589L280.3 662L347.7 616Z" class="poly-one"></path>
+            <path d="M347.7 616L333.3 704L426.1 613Z" class="poly-five"></path>
+            <path d="M426.1 613L469.1 558L377.7 559Z" class="poly-six"></path>
+            <path d="M283.3 333L202.9 490L325.3 492Z" class="poly-five"></path>
+            <path d="M325.3 492L202.9 490L333.3 589Z" class="poly-four"></path>
+            <path d="M280.3 662L333.3 704L347.7 616Z" class="poly-three"></path>
+            <path d="M202.9 490L173.9 613L333.3 589Z" class="poly-seven"></path>
+            <path d="M246.9 829L361.7 749L333.3 704Z" class="poly-two"></path>
+            <path d="M500.1 439L455.1 404L419.7 446Z" class="poly-four"></path>
+            <path d="M419.7 446L407.7 372L325.3 492Z" class="poly-six"></path>
+            <path d="M455.1 404L407.7 372L419.7 446Z" class="poly-one"></path>
+            <path d="M152.9 377L140.9 514L202.9 490Z" class="poly-one"></path>
+            <path d="M202.9 490L140.9 514L173.9 613Z" class="poly-one"></path>
+            <path d="M469.1 558L500.1 439L419.7 446Z" class="poly-six"></path>
+            <path d="M207.9 754L333.3 704L280.3 662Z" class="poly-eight"></path>
+            <path d="M333.3 704L469.1 716L426.1 613Z" class="poly-four"></path>
+            <path d="M584.6 603L571.6 577L564.6 666Z" class="poly-nine"></path>
+            <path d="M407.7 372L283.3 333L325.3 492Z" class="poly-four"></path>
+            <path d="M361.7 749L469.1 716L333.3 704Z" class="poly-two"></path>
+            <path d="M469.1 558L571.6 577L500.1 439Z" class="poly-one"></path>
+            <path d="M140.9 514L105.4 579L173.9 613Z" class="poly-six"></path>
+            <path d="M173.9 613L207.9 754L280.3 662Z" class="poly-four"></path>
+            <path d="M407.7 372L365.7 305L283.3 333Z" class="poly-four"></path>
+            <path d="M428.1 304L365.7 305L407.7 372Z" class="poly-five"></path>
+            <path d="M428.1 304L407.7 372L455.1 404Z" class="poly-eight"></path>
+            <path d="M571.6 577L469.1 558L564.6 666Z" class="poly-three"></path>
+            <path d="M239.9 292L152.9 377L283.3 333Z" class="poly-one"></path>
+            <path d="M283.3 333L152.9 377L202.9 490Z" class="poly-five"></path>
+            <path d="M0 446L42.4 595L105.4 579Z" class="poly-nine"></path>
+            <path d="M571.6 577L549.6 422L500.1 439Z" class="poly-five"></path>
+            <path d="M500.1 439L549.6 422L455.1 404Z" class="poly-five"></path>
+            <path d="M43.4 739L207.9 754L173.9 613Z" class="poly-four"></path>
+            <path d="M549.6 422L428.1 304L455.1 404Z" class="poly-two"></path>
+            <path d="M564.6 666L469.1 558L426.1 613Z" class="poly-five"></path>
+            <path d="M571.6 577L675 436L549.6 422Z" class="poly-eight"></path>
+            <path d="M469.1 716L564.6 666L426.1 613Z" class="poly-one"></path>
+            <path d="M265.3 263L239.9 292L283.3 333Z" class="poly-six"></path>
+            <path d="M265.3 263L283.3 333L365.7 305Z" class="poly-eleven"></path>
+            <path d="M247.3 235L265.3 263L356.7 149Z" class="poly-one"></path>
+            <path d="M132.4 306L96.4 367L152.9 377Z" class="poly-three"></path>
+            <path d="M132.4 306L152.9 377L239.9 292Z" class="poly-eight"></path>
+            <path d="M152.9 377L76.4 394L140.9 514Z" class="poly-six"></path>
+            <path d="M96.4 367L76.4 394L152.9 377Z" class="poly-one"></path>
+            <path d="M0 446L105.4 579L140.9 514Z" class="poly-eleven"></path>
+            <path d="M105.4 579L43.4 739L173.9 613Z" class="poly-three"></path>
+            <path d="M235.3 828L246.9 829L207.9 754Z" class="poly-one"></path>
+            <path d="M207.9 754L246.9 829L333.3 704Z" class="poly-six"></path>
+            <path d="M361.7 749L497.1 846L469.1 716Z" class="poly-two"></path>
+            <path d="M112.4 815L235.3 828L207.9 754Z" class="poly-nine"></path>
+            <path d="M299.3 900L344.7 846L246.9 829Z" class="poly-five"></path>
+            <path d="M246.9 829L344.7 846L361.7 749Z" class="poly-eleven"></path>
+            <path d="M469.1 716L586.6 781L564.6 666Z" class="poly-ten"></path>
+            <path d="M192.9 199L132.4 306L239.9 292Z" class="poly-one"></path>
+            <path d="M0 328L0 446L76.4 394Z" class="poly-eight"></path>
+            <path d="M265.3 263L247.3 235L239.9 292Z" class="poly-nine"></path>
+            <path d="M356.7 149L265.3 263L365.7 305Z" class="poly-eight"></path>
+            <path d="M0 446L0 591L42.4 595Z" class="poly-nine"></path>
+            <path d="M42.4 595L43.4 739L105.4 579Z" class="poly-eight"></path>
+            <path d="M675 643L675 569L584.6 603Z" class="poly-two"></path>
+            <path d="M584.6 603L675 569L571.6 577Z" class="poly-eight"></path>
+            <path d="M0 591L0 629L42.4 595Z" class="poly-ten"></path>
+            <path d="M0 328L76.4 394L96.4 367Z" class="poly-one"></path>
+            <path d="M76.4 394L0 446L140.9 514Z" class="poly-two"></path>
+            <path d="M344.7 846L497.1 846L361.7 749Z" class="poly-one"></path>
+            <path d="M564.6 666L675 643L584.6 603Z" class="poly-seven"></path>
+            <path d="M497.1 846L586.6 781L469.1 716Z" class="poly-three"></path>
+            <path d="M0 629L43.4 739L42.4 595Z" class="poly-one"></path>
+            <path d="M627.6 325L460.1 213L428.1 304Z" class="poly-seven"></path>
+            <path d="M428.1 304L460.1 213L365.7 305Z" class="poly-eight"></path>
+            <path d="M627.6 325L428.1 304L549.6 422Z" class="poly-three"></path>
+            <path d="M43.4 739L112.4 815L207.9 754Z" class="poly-eight"></path>
+            <path d="M175.9 900L299.3 900L246.9 829Z" class="poly-six"></path>
+            <path d="M675 669L675 643L564.6 666Z" class="poly-three"></path>
+            <path d="M675 569L675 436L571.6 577Z" class="poly-eight"></path>
+            <path d="M175.9 900L246.9 829L235.3 828Z" class="poly-six"></path>
+            <path d="M344.7 846L430.7 900L497.1 846Z" class="poly-three"></path>
+            <path d="M675 436L627.6 325L549.6 422Z" class="poly-eight"></path>
+            <path d="M586.6 781L675 669L564.6 666Z" class="poly-four"></path>
+            <path d="M247.3 235L192.9 199L239.9 292Z" class="poly-four"></path>
+            <path d="M0 298L0 328L96.4 367Z" class="poly-five"></path>
+            <path d="M242.3 115L192.9 199L247.3 235Z" class="poly-six"></path>
+            <path d="M497.1 846L598.6 900L586.6 781Z" class="poly-seven"></path>
+            <path d="M299.3 900L430.7 900L344.7 846Z" class="poly-five"></path>
+            <path d="M430.7 900L472.1 900L497.1 846Z" class="poly-nine"></path>
+            <path d="M460.1 213L356.7 149L365.7 305Z" class="poly-one"></path>
+            <path d="M40.4 900L175.9 900L112.4 815Z" class="poly-ten"></path>
+            <path d="M112.4 815L175.9 900L235.3 828Z" class="poly-five"></path>
+            <path d="M0 629L0 751L43.4 739Z" class="poly-nine"></path>
+            <path d="M43.4 739L0 849L112.4 815Z" class="poly-eight"></path>
+            <path d="M0 298L96.4 367L132.4 306Z" class="poly-eight"></path>
+            <path d="M627.6 325L522.6 185L460.1 213Z" class="poly-five"></path>
+            <path d="M460.1 213L515.1 99L356.7 149Z" class="poly-five"></path>
+            <path d="M65.4 188L0 298L132.4 306Z" class="poly-nine"></path>
+            <path d="M675 436L675 307L627.6 325Z" class="poly-ten"></path>
+            <path d="M627.6 325L612.6 218L522.6 185Z" class="poly-three"></path>
+            <path d="M675 262L612.6 218L627.6 325Z" class="poly-eleven"></path>
+            <path d="M349.7 101L242.3 115L356.7 149Z" class="poly-eight"></path>
+            <path d="M356.7 149L242.3 115L247.3 235Z" class="poly-nine"></path>
+            <path d="M192.9 199L65.4 188L132.4 306Z" class="poly-ten"></path>
+            <path d="M515.1 99L349.7 101L356.7 149Z" class="poly-three"></path>
+            <path d="M515.1 99L460.1 213L522.6 185Z" class="poly-eight"></path>
+            <path d="M675 307L675 262L627.6 325Z" class="poly-ten"></path>
+            <path d="M148.9 71L65.4 188L192.9 199Z" class="poly-eight"></path>
+            <path d="M472.1 900L598.6 900L497.1 846Z" class="poly-eight"></path>
+            <path d="M586.6 781L675 862L675 669Z" class="poly-nine"></path>
+            <path d="M0 751L0 849L43.4 739Z" class="poly-four"></path>
+            <path d="M675 262L675 230L612.6 218Z" class="poly-one"></path>
+            <path d="M596.6 141L515.1 99L522.6 185Z" class="poly-eight"></path>
+            <path d="M0 849L40.4 900L112.4 815Z" class="poly-six"></path>
+            <path d="M598.6 900L675 862L586.6 781Z" class="poly-seven"></path>
+            <path d="M596.6 141L522.6 185L612.6 218Z" class="poly-six"></path>
+            <path d="M675 230L596.6 141L612.6 218Z" class="poly-seven"></path>
+            <path d="M0 849L0 900L40.4 900Z" class="poly-five"></path>
+            <path d="M598.6 900L675 900L675 862Z" class="poly-four"></path>
+            <path d="M242.3 115L148.9 71L192.9 199Z" class="poly-ten"></path>
+            <path d="M142.4 51L148.9 71L151.9 0Z" class="poly-two"></path>
+            <path d="M148.9 71L242.3 115L151.9 0Z" class="poly-eight"></path>
+            <path d="M314.3 0L242.3 115L349.7 101Z" class="poly-five"></path>
+            <path d="M148.9 71L0 126L65.4 188Z" class="poly-seven"></path>
+            <path d="M65.4 188L0 126L0 298Z" class="poly-seven"></path>
+            <path d="M0 75L0 126L148.9 71Z" class="poly-five"></path>
+            <path d="M453.1 0L349.7 101L515.1 99Z" class="poly-five"></path>
+            <path d="M453.1 0L337.7 0L349.7 101Z" class="poly-two"></path>
+            <path d="M337.7 0L314.3 0L349.7 101Z" class="poly-four"></path>
+            <path d="M627.6 0L453.1 0L515.1 99Z" class="poly-eleven"></path>
+            <path d="M314.3 0L151.9 0L242.3 115Z" class="poly-four"></path>
+            <path d="M142.4 51L0 75L148.9 71Z" class="poly-three"></path>
+            <path d="M82.4 0L0 75L142.4 51Z" class="poly-eleven"></path>
+            <path d="M675 230L675 65L596.6 141Z" class="poly-six"></path>
+            <path d="M596.6 141L627.6 0L515.1 99Z" class="poly-three"></path>
+            <path d="M151.9 0L82.4 0L142.4 51Z" class="poly-two"></path>
+            <path d="M675 65L627.6 0L596.6 141Z" class="poly-five"></path>
+            <path d="M82.4 0L0 0L0 75Z" class="poly-three"></path>
+            <path d="M675 65L675 0L627.6 0Z" class="poly-six"></path>
+        </g>
+    </svg>
+</body>
+
+</html>

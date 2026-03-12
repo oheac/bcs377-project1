@@ -1,0 +1,155 @@
+:root {
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    --button-border: 2px solid rgb(from var(--primary-color) r g b / 0.3);
+    --border-radius: 0.5rem;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.card {
+    color: var(--text-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin: 0.5rem;
+    flex: 1 1 200px;
+}
+
+.glass {
+    background-color: rgb(from var(--background-color) r g b / 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 2px rgb(from var(--text-color) r g b / 0.2);
+
+}
+
+.button,
+button {
+    color: var(--text-color);
+    padding: 10px 24px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: var(--border-radius);
+    border: var(--button-border);
+}
+
+.nav-group {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-group a {
+    float: left;
+}
+
+.nav-group a:last-child {
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.nav-group a:first-child {
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.nav-group a:not(:last-child) {
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.nav-group a:not(:first-child) {
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.nav-group a:hover {
+    background-color: rgb(from var(--primary-color) r g b / 0.2);
+}
+
+.nav-group a:active,
+.nav-group>.active {
+    background-color: rgb(from var(--primary-color) r g b / 0.4);
+}
+
+select {
+    appearance: none;
+
+    @supports (appearance: base-select) {
+
+        &,
+        &::picker(select) {
+            appearance: base-select;
+        }
+    }
+}
+
+::picker(select) {
+    appearance: base-select;
+    border: var(--button-border);
+    border-radius: var(--border-radius);
+    background-color: transparent;
+
+}
+
+select option::checkmark {
+    display: none;
+}
+
+select::picker-icon {
+    transition: 0.2s rotate;
+}
+
+select:open::picker-icon {
+    rotate: -180deg;
+}
+
+select>option {
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+}
+
+select option:hover {
+    background-color: rgb(from var(--secondary-color) r g b / 0.7);
+}
+
+select option:last-child {
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+select option:first-child {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+select option:not(:last-child) {
+    border-bottom: none;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+select option:not(:first-child) {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+}

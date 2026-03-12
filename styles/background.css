@@ -1,0 +1,72 @@
+.background {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.poly-one {
+    fill: var(--background-color);
+    stroke: var(--background-color);
+}
+
+.poly-two {
+    --eighty-twenty: color-mix(in lab, var(--background-color) 80%, var(--primary-color) 20%);
+    fill: var(--eighty-twenty);
+    stroke: var(--eighty-twenty);
+}
+
+.poly-three {
+    --seventy-thirty: color-mix(in lab, var(--background-color) 70%, var(--primary-color) 30%);
+    fill: var(--seventy-thirty);
+    stroke: var(--seventy-thirty);
+}
+
+.poly-four {
+    --sixty-forty: color-mix(in lab, var(--background-color) 60%, var(--primary-color) 40%);
+    fill: var(--sixty-forty);
+    stroke: var(--sixty-forty);
+}
+
+.poly-five {
+    --fifty-fifty: color-mix(in lab, var(--background-color) 50%, var(--primary-color) 50%);
+    fill: var(--fifty-fifty);
+    stroke: var(--fifty-fifty);
+}
+
+.poly-six {
+    --forty-sixty: color-mix(in lab, var(--background-color) 40%, var(--primary-color) 60%);
+    fill: var(--forty-sixty);
+    stroke: var(--forty-sixty);
+}
+
+.poly-seven {
+    --thirty-seventy: color-mix(in lab, var(--background-color) 30%, var(--primary-color) 70%);
+    fill: var(--thirty-seventy);
+    stroke: var(--thirty-seventy);
+}
+
+.poly-eight {
+    --twenty-eighty: color-mix(in lab, var(--background-color) 20%, var(--primary-color) 80%);
+    fill: var(--twenty-eighty);
+    stroke: var(--twenty-eighty);
+}
+
+.poly-nine {
+    --ten-ninety: color-mix(in lab, var(--background-color) 10%, var(--primary-color) 90%);
+    fill: var(--ten-ninety);
+    stroke: var(--ten-ninety);
+}
+
+.poly-ten {
+    --five-ninety-five: color-mix(in lab, var(--background-color) 5%, var(--primary-color) 95%);
+    fill: var(--five-ninety-five);
+    stroke: var(--five-ninety-five);
+}
+
+.poly-eleven {
+    fill: var(--primary-color);
+    stroke: var(--primary-color);
+}
